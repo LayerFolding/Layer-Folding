@@ -1,11 +1,11 @@
 # Layer-Folding
 
 Official implementation of "Layer Folding: Neural Network Depth Reduction using Activation Linearization".
-
+<!--
 Amir Ben-Dror, Niv Zenghut, Avraham Raviv and Evgeny Artyomov.
 
 [SIRC - Samsung Israel R&D Center](http://sirc-portal/sirc/)
-
+-->
 ## Introduction
 This paper presents Layer Folding: an approach to reduce depth of a pre-trained deep neural network by identifying non-linear activations, such as ReLU, Tanh and Sigmoid, that can be removed, and next by folding the consequent linear layers, i.e. fully connected and convolutional, into one linear layer. The depth reduction can lead to smaller run times especially on edge devices. In addition, it can be shown that some tasks are characterized by so-called “Effective Degree of Non-Linearity (EDNL)”, which hints on how much model non-linear activations can be reduced without heavily compromising the model performance.
 
