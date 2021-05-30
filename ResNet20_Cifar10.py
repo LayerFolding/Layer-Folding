@@ -19,16 +19,18 @@ import argparse
 
 parser = argparse.ArgumentParser(description='Propert ResNets for CIFAR10 in pytorch')
 
-parser.add_argument('--epochs', default=100, type=int, metavar='N',
+parser.add_argument('--e', '--epochs', default=100, type=int, metavar='N',
                     help='number of total epochs to run')
 parser.add_argument('--lr', '--learning_rate', default=0.001, type=float,
                     metavar='LR', help='initial learning rate')
-parser.add_argument('--momentum', default=0.9, type=float, metavar='M',
+parser.add_argument('--m', '--momentum', default=0.9, type=float, metavar='M',
                     help='momentum')
-parser.add_argument('--weight_decay', '--wd', default=1e-4, type=float,
+parser.add_argument('--wd', '--weight_decay', '--wd', default=1e-4, type=float,
                     metavar='W', help='weight decay (default: 1e-4)')
-parser.add_argument('--l' ,'--lambda_reg', default=1/4, type=float,
+parser.add_argument('--l','--lambda_reg', default=1/4, type=float,
                     metavar='L', help='lambda regularization (default: 1/4)')
+parser.add_argument('--d','--depth', default=20, type=int,
+                    metavar='L', help='The depth of the network')
 
 # Device configuration
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -164,10 +166,15 @@ class ResNet(nn.Module):
 
 if __name__ == "__main__":
     args = parser.parse_args()
+    curr_lr = args.lr
+    momentum = args.m
+    lambda_reg = args.l
+    num_epochs = args.e
+    nb = int((args.d - 2) / 6)
+
 
     # create the model
     file_name = 'models/resnet20.pt'
-    nb = 3
     model = ResNet(ResidualBlock, [nb, nb, nb]).to(device)
     state_dict = torch.load(file_name)
     alpha_arr = [module for module in model.modules() if isinstance(module, alpha)]
@@ -176,10 +183,7 @@ if __name__ == "__main__":
     criterion = nn.CrossEntropyLoss()
 
     # set params
-    curr_lr = args.lr
-    momentum = args.momentum
-    lambda_reg = args.l
-    num_epochs = args.epochs
+
     optimizer = torch.optim.SGD(model.parameters(), lr=curr_lr,
                                 momentum=momentum)
 
