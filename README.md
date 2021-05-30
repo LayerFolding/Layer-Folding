@@ -13,7 +13,7 @@ To install requirements:
 pip install -r requirements.txt
 ```
 
-In addition, you should downloan pre-trained models, and save them in ```\models``` directory.
+In addition, you should download pre-trained models, and save them in ```models``` directory.
 
 They can be found [here](https://github.com/chenyaofo/pytorch-cifar-models).
 
