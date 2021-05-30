@@ -75,7 +75,7 @@ In order to show that a network possesses an EDNL, we show that its accuracy is 
 <p align="center">
 
 ### Alpha Progression
-Progression of ```α``` values corresponding to non-linear layers in ResNet-20 and ResNet-56 throughout the pre-folding phase with λc = 0.25. As expected, all α values are either kept around zero or pushed to one.
+Progression of ```α``` values corresponding to non-linear layers in ResNet-20 and ResNet-56 throughout the pre-folding phase with ```λc = 0.25```. As expected, all ```α``` values are either kept around zero or pushed to one.
   
 ### ResNet20
 <p align="center">
