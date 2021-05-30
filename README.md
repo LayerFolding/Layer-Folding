@@ -51,8 +51,7 @@ We utilize our method to optimize networks with respect to both accuracy and eff
 We perform our experiments on the ImageNet image classification task and measure the latency of all models on NVIDIA Titan X Pascal GPU.
 We consider the commonly used MobileNetV2 and EfficientNet-lite. We focus on these models for their attractiveness for hardware and edge devices, mostly credited to their competitive latency and the exclusion of squeeze-and-excite layers employed by other state-of-the-art networks.
 <p align="center">
-  <img width="400" height="260" src="https://user-images.githubusercontent.com/84841423/120116106-2f1f5a00-c18f-11eb-957d-f29dcd99e591.png">
-  <img width="300" height="200" src="https://user-images.githubusercontent.com/84841423/120116157-6857ca00-c18f-11eb-9509-d22221f20778.png">
+  <img width="460" height="310" src="https://user-images.githubusercontent.com/84841423/120116106-2f1f5a00-c18f-11eb-957d-f29dcd99e591.png">
 <p align="center">
 
 ## Citation
