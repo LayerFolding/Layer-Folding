@@ -5,23 +5,27 @@ Official implementation of "Layer Folding: Neural Network Depth Reduction using 
 ## Introduction
 This paper presents Layer Folding: an approach to reduce depth of a pre-trained deep neural network by identifying non-linear activations, such as ReLU, Tanh and Sigmoid, that can be removed, and next by folding the consequent linear layers, i.e. fully connected and convolutional, into one linear layer. The depth reduction can lead to smaller run times especially on edge devices. In addition, it can be shown that some tasks are characterized by so-called “Effective Degree of Non-Linearity (EDNL)”, which hints on how much model non-linear activations can be reduced without heavily compromising the model performance.
 
-## Run Experiments
+## Requirements
 To install requirements:
 ```
 pip install -r requirements.txt
 ```
 
-After installation, you can simply execute the script to train and collapse ResNet on Cifar10:
+In addition, you should downloan pre-trained models, and save them in ```\models``` directory.
+
+They can be found [here](https://github.com/chenyaofo/pytorch-cifar-models).
+
+## Run Experiments
+You can simply execute the script to train and collapse ResNet on Cifar10:
 ``` python
-python ResNet_Cifar10.py
+python ResNet_Cifar10_prefold.py
 ```
 The hyper-parameters can be controled by adding arguments. For example:
 ``` python
-python ResNet_Cifar10.py -d 20 -e 100 -lr 0.001 -m 0.9 -wd 0.0001 -l 0.25
+python ResNet_Cifar10_prefold.py -d 20 -e 100 -lr 0.001 -m 0.9 -wd 0.0001 -l 0.25
 ```
-Where ```lr``` is a hyperparameter (```λ```) that balances between the task loss and the amount of layers that will be folded, ```d``` is the depth of the net and the rest are set the training process.
+Where ```lr``` is a hyperparameter that balances between the task loss and the amount of layers that will be folded (```λ```), ```d``` is the depth of the net and the rest are set the training process.
 
-Pre-trained models can be found [here](https://github.com/LayerFolding/Layer-Folding/tree/main/models).
 
 The following script is folding the activations and then create a shallower network:
 ``` python
@@ -46,7 +50,7 @@ If you find Layer folding method to be useful in your own research, please consi
 
 ```bib
 @inproceedings{
-BZRA2021,
+BZRAVJ2021,
 title={Layer Folding: Neural Network Depth Reduction using Activation Linearization},
 author={Amir Ben Dror and Niv Zenghut and Avraham Raviv and Evgeny Artyomov},
 booktitle={???},
