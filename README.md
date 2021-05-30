@@ -79,14 +79,17 @@ Progression of $\alpha_i$ values corresponding to non-linear layers in ResNet-20
   
 ### ResNet20
 <p align="center">
-  <img width="460" height="310" src="https://user-images.githubusercontent.com/84841423/120116730-31cf7e80-c192-11eb-8280-e1b34ece0a1a.png">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/84841423/120116730-31cf7e80-c192-11eb-8280-e1b34ece0a1a.png">
 <p align="center">
 
 ### ResNet56
 <p align="center">
-  <img width="460" height="310" src="https://user-images.githubusercontent.com/84841423/120116728-309e5180-c192-11eb-9d3e-85cb0b227aa6.png">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/84841423/120116728-309e5180-c192-11eb-9d3e-85cb0b227aa6.png">
 <p align="center">
 
+```math
+a^2+b^2=c^2
+```
   
 ## Citation
 
