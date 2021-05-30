@@ -46,6 +46,14 @@ You can also using the following arguments (all of them not required):
 | -l        | --lambda_reg                | Lambda Regularization      | 0.25                |
 -->
 
+## Results
+We utilize our method to optimize networks with respect to both accuracy and efficiency. 
+We perform our experiments on the ImageNet image classification task and measure the latency of all models on NVIDIA Titan X Pascal GPU.
+We consider the commonly used MobileNetV2 and EfficientNet-lite. We focus on these models for their attractiveness for hardware and edge devices, mostly credited to their competitive latency and the exclusion of squeeze-and-excite layers employed by other state-of-the-art networks.
+
+![G6](https://user-images.githubusercontent.com/84841423/120115913-6ccfb300-c18e-11eb-9e0d-4999b632ed6c.png)
+
+
 ## Citation
 
 If you find Layer folding method to be useful in your own research, please consider citing the following paper:
