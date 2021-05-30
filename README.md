@@ -48,12 +48,28 @@ You can also using the following arguments (all of them not required):
 
 ## Results
 We utilize our method to optimize networks with respect to both accuracy and efficiency. 
+
 We perform our experiments on the ImageNet image classification task and measure the latency of all models on NVIDIA Titan X Pascal GPU.
 We consider the commonly used MobileNetV2 and EfficientNet-lite. We focus on these models for their attractiveness for hardware and edge devices, mostly credited to their competitive latency and the exclusion of squeeze-and-excite layers employed by other state-of-the-art networks.
 <p align="center">
   <img width="460" height="310" src="https://user-images.githubusercontent.com/84841423/120116106-2f1f5a00-c18f-11eb-957d-f29dcd99e591.png">
 <p align="center">
+  
+## Effective Degree of Non-Linearity Evaluation (EDNL)
+We use Layer Folding to evaluate the EDNL of several neural networks over image classification tasks.
 
+In order to show that a network possesses an EDNL, we show that its accuracy is roughly maintained down to a certain depth and drops below it. Particularly, we ensure that this holds true even when the network’s size increases as its depth grows smaller. We further show that such depth knee-point is  shared for different networks over a particular task.
+<p align="center">
+  <img width="460" height="310" src="https://user-images.githubusercontent.com/84841423/120116537-465f4700-c191-11eb-885c-4787cb314cb7.png">
+<p align="center">
+  
+<p align="center">
+  <img width="460" height="310" src="https://user-images.githubusercontent.com/84841423/120116538-47907400-c191-11eb-96f0-07f8046fb6ed.png">
+<p align="center">
+  
+<p align="center">
+  <img width="460" height="310" src="https://user-images.githubusercontent.com/84841423/120116540-48c1a100-c191-11eb-9b20-b345ad08981c.png">
+<p align="center">
 ## Citation
 
 If you find Layer folding method to be useful in your own research, please consider citing the following paper:
