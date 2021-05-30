@@ -74,6 +74,20 @@ In order to show that a network possesses an EDNL, we show that its accuracy is 
   <img width="460" height="310" src="https://user-images.githubusercontent.com/84841423/120116540-48c1a100-c191-11eb-9b20-b345ad08981c.png">
 <p align="center">
 
+### Alpha Progression
+Progression of $\alpha_i$ values corresponding to non-linear layers in ResNet-20 and ResNet-56 throughout the pre-folding phase with $\lambda_c = 0.25$. As expected, all α values are either kept around zero or pushed to one.
+  
+### ResNet20
+<p align="center">
+  <img width="460" height="310" src="https://user-images.githubusercontent.com/84841423/120116730-31cf7e80-c192-11eb-8280-e1b34ece0a1a.png">
+<p align="center">
+
+### ResNet56
+<p align="center">
+  <img width="460" height="310" src="https://user-images.githubusercontent.com/84841423/120116728-309e5180-c192-11eb-9d3e-85cb0b227aa6.png">
+<p align="center">
+
+  
 ## Citation
 
 If you find Layer folding method to be useful in your own research, please consider citing the following paper:
