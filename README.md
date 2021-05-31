@@ -100,7 +100,7 @@ If you find Layer folding method to be useful in your own research, please consi
 @inproceedings{
 BZRAVJ2021,
 title={Layer Folding: Neural Network Depth Reduction using Activation Linearization},
-author={Amir Ben Dror and Niv Zenghut and Avraham Raviv and Evgeny Artyomov},
+author={Anonymous Author(s)},
 booktitle={???},
 year={2021},
 url={???}
