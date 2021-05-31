@@ -29,10 +29,12 @@ python ResNet_Cifar10_prefold.py -d 20 -e 100 -lr 0.001 -m 0.9 -l 0.25
 Where ```lr``` is a hyperparameter that balances between the task loss and the amount of layers that will be folded (```λ```), ```d``` is the depth of the net and the rest are set the training process.
 
 
-The following script is folding the activations and then create a shallower network:
+The following script takes a prefold network and then folds the activations, creates a shallower network and fine-tunes the weights:
 ``` python
-python ResNet20_Cifar10_posfold.py
+python ResNet_Cifar10_posfold.py
 ```
+An example of prefold network can be found in ```models``` directory (```prefold_resnet20.ckpt```).
+
 <!--
 You can also using the following arguments (all of them not required):
 
