@@ -24,7 +24,7 @@ python ResNet_Cifar10_prefold.py
 ```
 The hyper-parameters can be controled by adding arguments. For example:
 ``` python
-python ResNet_Cifar10_prefold.py -d 20 -e 100 -lr 0.001 -m 0.9 -wd 0.0001 -l 0.25
+python ResNet_Cifar10_prefold.py -d 20 -e 100 -lr 0.001 -m 0.9 -l 0.25
 ```
 Where ```lr``` is a hyperparameter that balances between the task loss and the amount of layers that will be folded (```λ```), ```d``` is the depth of the net and the rest are set the training process.
 
