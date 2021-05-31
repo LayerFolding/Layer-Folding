@@ -143,7 +143,7 @@ def vgg16(pretrained: bool = False, progress: bool = True, **kwargs: Any) -> VGG
     return _vgg('vgg16', 'D', True, pretrained, progress, **kwargs)
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     args = parser.parse_args()
     lr = args.learning_rate
     momentum = args.momentum
