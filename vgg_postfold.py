@@ -21,7 +21,7 @@ parser.add_argument('-lr', '--learning_rate', default=0.001, type=float,
 parser.add_argument('-m', '--momentum', default=0.9, type=float, metavar='M',
                     help='momentum')
 parser.add_argument('-wd', '--weight_decay', '--wd', default=5e-4, type=float,
-                    metavar='W', help='weight decay (default: 1e-4)')
+                    metavar='W', help='weight decay (default: 5e-4)')
 parser.add_argument('-l','--lambda_reg', default=1/4, type=float,
                     metavar='L', help='lambda regularization (default: 1/4)')
 parser.add_argument('-d','--depth', default=16, type=int,
