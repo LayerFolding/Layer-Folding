@@ -18,7 +18,7 @@ In addition, you should download pre-trained models, and save them in ```models`
 They can be found [here](https://github.com/chenyaofo/pytorch-cifar-models).
 
 ## Run Experiments
-You can simply execute the script to train and collapse ```ResNet``` or ```VGG``` on Cifar10:
+You can simply execute the script to train and collapse ```ResNet``` or ```VGG``` on ```CIFAR10```:
 ``` python
 python ResNet_Cifar10_prefold.py
 ```
