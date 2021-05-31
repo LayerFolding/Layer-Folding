@@ -31,10 +31,10 @@ The hyper-parameters can be controled by adding arguments. For example:
 ``` python
 python ResNet_Cifar10_prefold.py -d 20 -e 100 -lr 0.001 -m 0.9 -l 0.25
 ```
-Where ```l``` is a hyperparameter that balances between the task loss and the amount of layers that will be folded (```λ```), ```d``` is the depth of the net and the rest are set the training process.
+Where ```l``` is a hyperparameter that balances between the task loss and the amount of layers that will be folded (```λ```), ```d``` is the depth of the net and the rest set the training process.
 
 
-The following scripts take a prefold networks and then fold their activations, create a shallower networks and finally fine-tune their weights:
+The following scripts take a prefold network and then fold its activations, create a shallower network and finally fine-tune the weights:
 ``` python
 python ResNet_Cifar10_posfold.py
 ```
@@ -44,7 +44,7 @@ python VGG_Cifar10_posfold.py
 ```
 Examples of prefold networks are available in ```models``` directory, for both ```ResNet20``` and ```VGG16```.
 
-**Note**: For training networks on CIFAR100, you should load the right dataset:
+**Note**: For training networks on CIFAR100, you should load the relevant datasets:
 ```
 train_dataset = torchvision.datasets.CIFAR100(root='data/', train=True, transform=transform, download=True)
 
