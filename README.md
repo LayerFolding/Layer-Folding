@@ -18,9 +18,14 @@ In addition, you should download pre-trained models, and save them in ```models`
 They can be found [here](https://github.com/chenyaofo/pytorch-cifar-models).
 
 ## Run Experiments
-You can simply execute the script to train and collapse ResNet on Cifar10:
+You can simply execute the script to train and collapse ```ResNet``` or ```VGG``` on Cifar10:
 ``` python
 python ResNet_Cifar10_prefold.py
+```
+or:
+
+``` python
+python VGG_Cifar10_prefold.py
 ```
 The hyper-parameters can be controled by adding arguments. For example:
 ``` python
@@ -29,11 +34,15 @@ python ResNet_Cifar10_prefold.py -d 20 -e 100 -lr 0.001 -m 0.9 -l 0.25
 Where ```lr``` is a hyperparameter that balances between the task loss and the amount of layers that will be folded (```λ```), ```d``` is the depth of the net and the rest are set the training process.
 
 
-The following script takes a prefold network and then folds the activations, creates a shallower network and fine-tunes the weights:
+The following scripts take a prefold networks and then fold their activations, create a shallower networks and finally fine-tune their weights:
 ``` python
 python ResNet_Cifar10_posfold.py
 ```
-An example of prefold network can be found in ```models``` directory (```prefold_resnet20.ckpt```).
+or:
+``` python
+python VGG_Cifar10_posfold.py
+```
+Examples of prefold networks available in ```models``` directory, for both ```ResNet20``` and ```VGG16```.
 
 <!--
 You can also using the following arguments (all of them not required):
