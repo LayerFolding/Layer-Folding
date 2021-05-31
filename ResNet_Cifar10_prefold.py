@@ -161,9 +161,19 @@ if __name__ == "__main__":
     lambda_reg = args.lambda_reg
     num_epochs = 100
     nb = int((args.depth - 2) / 6)
+    depth = args.depth
+    
+    print("==============")
+    print("Parameters:")
+    print(f"Learning Rate = {curr_lr}")
+    print(f"momentum = {momentum}")
+    print(f"Lambda regularization = {lambda_reg}")
+    print(f"#Epochs = {num_epochs}")
+    print(f"Depth = {depth}")
+    print("==============\n")
     
     # create the model
-    file_name = f'models/resnet{nb * 6 + 2}.pt'
+    file_name = f'models/resnet{depth}.pt'
     model = ResNet(ResidualBlock, [nb, nb, nb]).to(device)
     state_dict = torch.load(file_name)
     alpha_arr = [module for module in model.modules() if isinstance(module, alpha)]
@@ -231,9 +241,9 @@ if __name__ == "__main__":
 
             print('Accuracy of the model on the test images: {} %'.format(100 * correct / total))
     # Save the model checkpoint
-    torch.save(model.state_dict(), f'models/prefold_resnet{2 + 6 * nb}.ckpt')
+    torch.save(model.state_dict(), f'models/prefold_resnet{depth}.ckpt')
     # acc.append(correct / total)
-    text_file = open(f"models/acc_resnet{2 + nb * 6}.txt", "w")
+    text_file = open(f"models/acc_resnet{depth}.txt", "w")
     text_file.write(str(correct / total))
     text_file.write("\n")
     alpha_arr_val = []
