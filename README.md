@@ -50,7 +50,8 @@ train_dataset = torchvision.datasets.CIFAR100(root='data/', train=True, transfor
 
 test_dataset = torchvision.datasets.CIFAR100(root='data/', train=False, transform=transforms.Compose([transforms.ToTensor(), normalize,]))
 ```
-And change the number of classes:
+And change the number of classes as well:
+
 **ResNet**:
 ```
 class ResNet(nn.Module):
