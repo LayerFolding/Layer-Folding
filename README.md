@@ -1,6 +1,6 @@
 # Layer-Folding
 
-Official implementation of "Layer Folding: Neural Network Depth Reduction using Activation Linearization".
+Official implementation of **"Layer Folding: Neural Network Depth Reduction using Activation Linearization"**.
 ![LF-1](https://user-images.githubusercontent.com/84841423/120115743-c5528080-c18d-11eb-955b-580c7d0bbda7.png)
 
 
