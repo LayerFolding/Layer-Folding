@@ -118,7 +118,7 @@ Progression of ```α``` values corresponding to non-linear layers in ResNet-20 a
   <img width="500" height="300" src="https://user-images.githubusercontent.com/84841423/120116728-309e5180-c192-11eb-9d3e-85cb0b227aa6.png">
 <p align="center">
 
-We also create table that shows the indices of the removed layers for folded ResNet and VGG networks such that their resulting depth corresponds to their EDNL. It can be deriven from this table, what is the significant activation in each architecture.
+We also show a table of the indices of the removed layers for folded ResNet and VGG networks such that their resulting depth corresponds to their EDNL. It can be deriven from this table, what is the significant activation in each architecture.
 <p align="center">
   <img width="600" height="375" src="https://user-images.githubusercontent.com/84841423/120116934-5d9f3400-c193-11eb-994a-b7422565d5ce.png">
 <p align="center">
