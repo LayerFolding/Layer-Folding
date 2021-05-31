@@ -42,7 +42,26 @@ or:
 ``` python
 python VGG_Cifar10_posfold.py
 ```
-Examples of prefold networks available in ```models``` directory, for both ```ResNet20``` and ```VGG16```.
+Examples of prefold networks are available in ```models``` directory, for both ```ResNet20``` and ```VGG16```.
+
+**Note**: For training networks on CIFAR100, you should load the right dataset:
+```
+train_dataset = torchvision.datasets.CIFAR100(root='data/', train=True, transform=transform, download=True)
+
+test_dataset = torchvision.datasets.CIFAR100(root='data/', train=False, transform=transforms.Compose([transforms.ToTensor(), normalize,]))
+```
+And change the number of classes:
+**ResNet**:
+```
+class ResNet(nn.Module):
+    def __init__(self, block, layers, num_classes=100)
+```
+
+**VGG**: 
+```
+class VGG(nn.Module):
+    def __init__(self, features: nn.Module, num_classes: int = 100, init_weights: bool = True)
+```
 
 <!--
 You can also using the following arguments (all of them not required):
