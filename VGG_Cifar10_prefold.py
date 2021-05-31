@@ -151,6 +151,16 @@ if __name__ == "__main__":
     wd = args.weight_decay
     num_epochs = args.epochs
     depth = args.depth
+    
+    print("==============")
+    print("Parameters:")
+    print(f"Learning Rate = {curr_lr}")
+    print(f"momentum = {momentum}")
+    print(f"Weight Decay = {wd}")
+    print(f"Lambda Regularization = {lambda_reg}")
+    print(f"#Epochs = {num_epochs}")
+    print(f"Depth = {depth}")
+    print("==============\n")
 
     if depth == 16:
         model = vgg16()
