@@ -133,6 +133,6 @@ BZRAVJ2021,
 title={Layer Folding: Neural Network Depth Reduction using Activation Linearization},
 author={Anonymous Author(s)},
 year={2021},
-url={https://arxiv.org/pdf/2106.09309.pdf}
+url={https://arxiv.org/abs/2106.09309}
 }
 ```
