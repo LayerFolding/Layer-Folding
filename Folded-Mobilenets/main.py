@@ -24,7 +24,7 @@ import tf_slim as slim
 import imagenet
 import mobilenet_v2
 
-parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
+parser = argparse.ArgumentParser(description='Evaluate folded mv2')
 parser.add_argument('--dataset-dir', type=str, help='path to imagenet dir')
 parser.add_argument('--dm', type=float,
                     help='The desired folded depth multiplier (0.75, 1., 1.4)')
