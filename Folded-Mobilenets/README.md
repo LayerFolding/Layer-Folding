@@ -7,6 +7,7 @@ To install requirements:
 pip install -r requirements.txt
 ```
 Also, download and extract the checkpoints from the following link:
+https://drive.google.com/drive/folders/1POI5PhHnRL1EaQrJRS2QuYxTz6YgK6Qt?usp=sharing
 
 ## Run Evaluation
 In order to run the evaluation use the main script:
