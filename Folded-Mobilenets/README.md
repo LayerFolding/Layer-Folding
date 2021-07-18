@@ -14,3 +14,4 @@ In order to run the evaluation use the main script:
 ```
 python main.py --dm 1.0 --dataset-dir PATH_TO_IMAGENET --checkpoint-dir PATH_TO_DOWNLOADED_CHECKPOINT_DIR
 ```
+You may use dm: 0.75, 1.0, 1.4
