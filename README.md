@@ -109,13 +109,3 @@ Progression of ```α``` values corresponding to non-linear layers in ResNet-20 a
 <p align="center">
   <img width="500" height="300" src="https://user-images.githubusercontent.com/84841423/120116730-31cf7e80-c192-11eb-8280-e1b34ece0a1a.png">
 <p align="center">
-
-### ResNet56
-<p align="center">
-  <img width="500" height="300" src="https://user-images.githubusercontent.com/84841423/120116728-309e5180-c192-11eb-9d3e-85cb0b227aa6.png">
-<p align="center">
-
-We also show a table of the indices of the removed layers for folded ResNet and VGG networks. The significant activation in each architecture can be derived from this table:
-<p align="center">
-  <img width="600" height="375" src="https://user-images.githubusercontent.com/84841423/120116934-5d9f3400-c193-11eb-994a-b7422565d5ce.png">
-<p align="center">
