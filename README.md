@@ -122,17 +122,3 @@ We also show a table of the indices of the removed layers for folded ResNet and 
 <p align="center">
   <img width="600" height="375" src="https://user-images.githubusercontent.com/84841423/120116934-5d9f3400-c193-11eb-994a-b7422565d5ce.png">
 <p align="center">
-
-## Citation
-
-If you find Layer folding method to be useful in your own research, please consider citing the following paper:
-
-```bib
-@inproceedings{
-BZRAVJ2021,
-title={Layer Folding: Neural Network Depth Reduction using Activation Linearization},
-author={Anonymous Author(s)},
-year={2021},
-url={https://arxiv.org/abs/2106.09309}
-}
-```
