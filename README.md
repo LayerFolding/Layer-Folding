@@ -77,14 +77,3 @@ In order to show that a network possesses an EDNL, we show that its accuracy is 
 ## Citation
 
 If you find Layer folding method to be useful in your own research, please consider citing the following paper:
-
-```bib
-@inproceedings{
-BZRAVJ2021,
-title={Layer Folding: Neural Network Depth Reduction using Activation Linearization},
-author={Amir Ben Dror and Niv Zenghut and Avraham Raviv and Evgeny Artyomov},
-booktitle={???},
-year={2021},
-url={???}
-}
-```
