@@ -86,10 +86,7 @@ We consider the commonly used MobileNetV2 and EfficientNet-lite. We focus on the
   <img width="460" height="310" src="https://user-images.githubusercontent.com/84841423/120116106-2f1f5a00-c18f-11eb-957d-f29dcd99e591.png">
 <p align="center">
   
-## Effective Degree of Non-Linearity Evaluation (EDNL)
-We use Layer Folding to evaluate the EDNL of several neural networks over image classification tasks.
 
-In order to show that a network possesses an EDNL, we show that its accuracy is roughly maintained down to a certain depth and drops below it. Particularly, we ensure that this holds true even when the network’s size increases as its depth grows smaller. We further show that such depth knee-point is  shared for different networks over a particular task.
 ### MNIST
 <p align="center">
   <img width="460" height="310" src="https://user-images.githubusercontent.com/84841423/120116537-465f4700-c191-11eb-885c-4787cb314cb7.png">
@@ -118,7 +115,7 @@ Progression of ```α``` values corresponding to non-linear layers in ResNet-20 a
   <img width="500" height="300" src="https://user-images.githubusercontent.com/84841423/120116728-309e5180-c192-11eb-9d3e-85cb0b227aa6.png">
 <p align="center">
 
-We also show a table of the indices of the removed layers for folded ResNet and VGG networks such that their resulting depth corresponds to their EDNL. The significant activation in each architecture can be derived from this table:
+We also show a table of the indices of the removed layers for folded ResNet and VGG networks. The significant activation in each architecture can be derived from this table:
 <p align="center">
   <img width="600" height="375" src="https://user-images.githubusercontent.com/84841423/120116934-5d9f3400-c193-11eb-994a-b7422565d5ce.png">
 <p align="center">
